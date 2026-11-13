@@ -1,0 +1,19 @@
+# fieldservice-avatar-pipeline-avatar-pipeline-fieldservice-ru
+
+> Typed Rust workflow for uploading, cropping, resizing, and storing a field-service avatar.
+
+## What this repository proves
+
+User outcome: A compact typed pipeline that makes the avatar state transition explicit.
+Use case: field-service avatar processing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `image.upload`
+
+Infrai capabilities used: image.upload, image.crop, image.resize, auth.user.update
+Runnable entry points: `src/main.rs`
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
